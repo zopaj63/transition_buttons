@@ -1,0 +1,58 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: bisque;
+}
+
+.container{
+    display: flex;
+    width: 900px;
+    height: 300px;
+    margin: 100px;
+    padding: 30px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: darkred;
+}
+
+.item:first-child{
+    width: 900px;
+    align-self: stretch;
+    color: orange;
+}
+
+button{
+    background-color: brown;
+    color: orange;
+    width: 140px;
+    height: 50px;
+    border: 3px solid orange;
+    border-radius: 8px;
+    font-size: 1.2em;
+    padding: 3px;
+    font-weight: bold;
+    transition: background-color 1s ease-in-out, 
+    border-radius 0.4s linear,
+    transform 0.6s ease-in-out,
+    box-shadow 1s ease-in-out;
+}
+
+button:hover{
+    background-color: red;
+    box-shadow: 6px 6px 10px orange;
+    transform: translateY(8px);
+}
+
+button:focus{
+    background-color: orangered;
+    border-radius: 20%;
+    transform: rotate(1turn);
+    border: 2px solid yellow;
+    color: brown;
+}
